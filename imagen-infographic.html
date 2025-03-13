@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagen3 画像生成AIモデル</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@300;400;500&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --mono-1: #000000;
+        --mono-2: #333333;
+        --mono-3: #666666;
+        --mono-4: #cccccc;
+        --accent: #ff3366;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Helvetica Neue", sans-serif;
+        color: var(--mono-2);
+        line-height: 1.5;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: #ffffff;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+      }
+
+      .title {
+        grid-column: 1 / -1;
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+        margin-bottom: 40px;
+        color: var(--mono-1);
+        border-bottom: 1px solid var(--mono-4);
+        padding-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: var(--mono-1);
+      }
+
+      p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .section {
+        margin-bottom: 40px;
+      }
+
+      .full-width {
+        grid-column: 1 / -1;
+      }
+
+      .half-width {
+        grid-column: span 6;
+      }
+
+      @media (max-width: 768px) {
+        .half-width {
+          grid-column: 1 / -1;
+        }
+      }
+
+      .feature-box {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-left: 3px solid var(--accent);
+        margin-bottom: 20px;
+      }
+
+      .feature-title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: var(--mono-1);
+      }
+
+      .number {
+        font-family: "Roboto Mono", monospace;
+        color: var(--accent);
+        font-weight: bold;
+      }
+
+      .image-container {
+        grid-column: 1 / -1;
+        margin: 40px 0;
+        text-align: center;
+      }
+
+      .main-image {
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-caption {
+        font-size: 12px;
+        color: var(--mono-3);
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .highlight {
+        color: var(--accent);
+      }
+
+      .comparison-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+      }
+
+      .comparison-table th {
+        background-color: var(--mono-1);
+        color: white;
+        text-align: left;
+        padding: 10px;
+      }
+
+      .comparison-table td {
+        padding: 10px;
+        border-bottom: 1px solid var(--mono-4);
+      }
+
+      .comparison-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .step {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+      }
+
+      .step-number {
+        background-color: var(--accent);
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        flex-shrink: 0;
+        font-family: "Roboto Mono", monospace;
+        font-size: 12px;
+      }
+
+      .step-content {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; border-bottom: 1px solid var(--mono-4); padding-bottom: 20px;">
+      <h1 style="font-size: 32px; font-weight: 300; letter-spacing: 0.05em; color: var(--mono-1);">
+        Imagen3 AI 画像生成技術
+      </h1>
+      <a href="ai-models-infographic.html" style="background-color: var(--accent); color: white; padding: 5px 10px; border-radius: 5px; text-decoration: none; font-size: 14px;">
+        生成AI最新動向のページへ
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="image-container full-width">
+        <img
+          src="image_fx_yaskawa.jpg"
+          alt="YASKAWA MOTOMAN工業用ロボットアーム"
+          class="main-image"
+        />
+        <p class="image-caption">
+          ImageFXで生成された YASKAWA MOTOMAN
+          工業用ロボットアーム。このような高精細な画像がテキストプロンプトから生成可能。
+        </p>
+      </div>
+
+      <div class="half-width">
+        <div class="section">
+          <h2>Imagen<span class="highlight">3</span>とは</h2>
+          <p>
+            Google
+            DeepMindが開発した最新の拡散モデルベースのテキストから画像生成AI。以前のモデルより大幅に性能が向上し、自然な日常言語での指示からでも正確に画像を生成できます。
+          </p>
+
+          <div class="feature-box">
+            <p class="feature-title">主な特徴</p>
+            <ul>
+              <li>高い詳細度と豊かなライティングによる高品質な画像生成</li>
+              <li>プロンプト理解力の向上（自然な日常言語に対応）</li>
+              <li>テキストレンダリング機能の改善</li>
+              <li>有害コンテンツを最小限に抑えるフィルタリング</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="half-width">
+        <div class="section">
+          <h2>Image<span class="highlight">FX</span>とは</h2>
+          <p>
+            Googleが提供するAI画像生成ツールで、Imagen3をベースに一般ユーザーがテキストから画像を簡単に作成できるウェブサービス。無料で利用可能で、Googleアカウントのみ必要です。
+          </p>
+
+          <div class="feature-box">
+            <p class="feature-title">主な特徴</p>
+            <ul>
+              <li>無料で利用可能（使用回数制限あり、約30回/日）</li>
+              <li>直感的なインターフェースで簡単操作</li>
+              <li>「エクスプレッシブチップス」機能でスタイル調整</li>
+              <li>生成画像にはSynthID技術による透かしが埋め込まれる</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-width">
+        <div class="section">
+          <h2>ImageFXの使い方</h2>
+
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <a href="https://labs.google/fx/tools/image-fx" target="_blank"
+                >ImageFXのウェブサイト</a
+              >にアクセス
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              Googleアカウントでログイン（国によっては利用不可の場合あり。VPNでアクセス可能の場合も）
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              左側のテキストボックスに生成したい画像の説明を入力（例：「宇宙ステーション、夜景、リアルな描写」）
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              「Create」ボタンをクリックし、4つの画像オプションが生成されるのを確認
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              気に入った画像を選択し、ダウンロードまたは共有リンクをコピー
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full-width">
+        <div class="section">
+          <h2>Imagen3とImageFXの比較</h2>
+
+          <table class="comparison-table">
+            <tr>
+              <th>項目</th>
+              <th>Imagen3</th>
+              <th>ImageFX</th>
+            </tr>
+            <tr>
+              <td>種類</td>
+              <td>テキストから画像を生成するAIモデル</td>
+              <td>ユーザーが利用する画像生成ツール</td>
+            </tr>
+            <tr>
+              <td>開発者</td>
+              <td>Google DeepMind</td>
+              <td>Google（AI Test Kitchen）</td>
+            </tr>
+            <tr>
+              <td>主な機能</td>
+              <td>高品質画像生成、プロンプト理解力向上</td>
+              <td>直感的インターフェース、エクスプレッシブチップス</td>
+            </tr>
+            <tr>
+              <td>利用方法</td>
+              <td>ImageFXやGemini APIを介してアクセス</td>
+              <td>ウェブサイトでテキスト入力、画像生成</td>
+            </tr>
+            <tr>
+              <td>料金</td>
+              <td>無料（ツール経由）</td>
+              <td>無料（使用回数制限あり）</td>
+            </tr>
+            <tr>
+              <td>安全性</td>
+              <td>有害コンテンツフィルタリング</td>
+              <td>SynthIDによる透かし埋め込み</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="full-width">
+        <div class="section">
+          <h2>画像生成のコツ</h2>
+          <p>
+            より良い画像を生成するためには、詳細な記述が効果的です。以下は添付画像の生成に使用したプロンプトの例です：
+          </p>
+          <div class="feature-box">
+            <p style="font-size: 12px; font-style: italic">
+              "A professional photograph of a YASKAWA MOTOMAN industrial robot
+              arm in signature blue color, positioned next to a black and white
+              Aruco marker on a clean factory floor. The Aruco marker shows its
+              distinctive square grid pattern with a thick black border. The
+              robot is performing a precision alignment task, with the crisp
+              Aruco marker visible for position calibration. The scene is
+              well-lit with industrial lighting, showing the robot's
+              articulation points and the clear binary pattern of the Aruco
+              marker. The marker's internal grid pattern is sharp and clearly
+              distinguishable. High resolution, photorealistic style."
+            </p>
+          </div>
+          <p>
+            単語だけでなく、シーンの詳細、光の状態、求める画質やスタイルなど具体的に指定すると、より意図に近い画像が生成されます。
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
