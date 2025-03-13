@@ -9,7 +9,7 @@
 
 このプロジェクトは GitHub Pages でホストされており、以下のリンクからアクセスできます：
 
-[https://[あなたの GitHub ユーザー名].github.io/ai-models-infographic/](https://[あなたのGitHubユーザー名].github.io/ai-models-infographic/)
+[https://sunwahayasaka.github.io/ai-models-infographic/](https://sunwahayasaka.github.io/ai-models-infographic/)
 
 ## 特徴
 
