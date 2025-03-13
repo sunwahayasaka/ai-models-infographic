@@ -9,7 +9,7 @@
 
 このプロジェクトは GitHub Pages でホストされており、以下のリンクからアクセスできます：
 
-[https://[あなたの GitHub ユーザー名].github.io/ai-models-infographic/](https://[あなたのGitHubユーザー名].github.io/ai-models-infographic/)
+[https://sunwahayasaka.github.io/ai-models-infographic/](https://sunwahayasaka.github.io/ai-models-infographic/)
 
 ## 特徴
 
@@ -24,16 +24,6 @@
 - `imagen-infographic.html` - Imagen3 と ImageFX に関するページ
 - `image_fx_yaskawa.jpg` - 画像生成 AI によって作成された工業用ロボットの画像
 
-## インストール方法
-
-このプロジェクトは静的 HTML ファイルで構成されているため、特別なインストールは必要ありません。GitHub からリポジトリをクローンするか、ZIP ファイルとしてダウンロードし、HTML ファイルをブラウザで開くだけです。
-
-```bash
-git clone https://github.com/[あなたのGitHubユーザー名]/ai-models-infographic.git
-cd ai-models-infographic
-# ブラウザでHTMLファイルを開く
-```
-
 ## GitHub Pages でのホスティング
 
 このリポジトリは GitHub Pages でホスティングできるように設定されています。リポジトリの設定ページから GitHub Pages を有効にするだけで、オンラインで公開されます。
@@ -41,12 +31,7 @@ cd ai-models-infographic
 ## 更新履歴
 
 - 2025 年 3 月 13 日 - 初版リリース
-- 2025 年 3 月 XX 日 - ナビゲーションリンクの追加および改善
 
 ## 制作者
 
-このインフォグラフィックは Claude3.7 Sonnet によって作成され、[あなたの名前]によって編集・公開されています。
-
-## ライセンス
-
-このプロジェクトは[ライセンスタイプを記入]の下で公開されています。詳細については LICENSE ファイルを参照してください。
+このインフォグラフィックは Claude3.7 Sonnet によって作成されて編集・公開されています。
