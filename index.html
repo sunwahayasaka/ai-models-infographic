@@ -415,7 +415,9 @@
           </div>
 
           <div class="card">
-            <h2 class="section-title">主要AIモデル比較</h2>
+            <h2 class="section-title">
+              主要AIモデル比較とオススメユースケース
+            </h2>
 
             <div class="model-card">
               <div class="model-card-header">
@@ -428,18 +430,51 @@
                 <span class="tag">多言語対応</span>
                 <span class="tag">音声・画像入出力</span>
               </div>
+              <div class="box" style="margin-top: 10px; font-size: 13px">
+                <p>
+                  <strong>オススメ用途：</strong>
+                  汎用的な対話、画像理解・生成、複雑なタスク
+                </p>
+              </div>
             </div>
 
             <div class="model-card">
               <div class="model-card-header">
-                <span class="model-name">o3-mini/o1</span>
+                <span class="model-name">o3-mini</span>
                 <span class="model-company">OpenAI</span>
               </div>
-              <p>STEM分野とコーディングに特化。推論能力が高い。</p>
+              <p>STEM分野とコーディングに特化。高速かつ高精度な応答。</p>
               <div class="model-features">
                 <span class="tag">高速な応答</span>
                 <span class="tag">数学・科学に強い</span>
                 <span class="tag">低コスト</span>
+              </div>
+              <div class="box" style="margin-top: 10px; font-size: 13px">
+                <p>
+                  <strong>オススメ用途：</strong>
+                  <span style="padding-left: 0">コーディング</span>
+                  コード生成とデバッグに優れた性能。
+                </p>
+              </div>
+            </div>
+
+            <div class="model-card">
+              <div class="model-card-header">
+                <span class="model-name">o1</span>
+                <span class="model-company">OpenAI</span>
+              </div>
+              <p>最高レベルの推論能力。ソフトウェア開発や数学的推論に強み。</p>
+              <div class="model-features">
+                <span class="tag">高精度推論</span>
+                <span class="tag">論理的思考</span>
+                <span class="tag">高通信コスト</span>
+              </div>
+              <div class="box" style="margin-top: 10px; font-size: 13px">
+                <p>
+                  <strong>オススメ用途：</strong>
+                  <span style="padding-left: 0">論文検索・壁打ち</span>
+                  複雑な推論タスクに強く、博士課程レベルのパフォーマンス。
+                </p>
               </div>
             </div>
 
@@ -454,9 +489,128 @@
                 <span class="tag">マルチモーダル理解</span>
                 <span class="tag">MCP対応</span>
               </div>
+              <div class="box" style="margin-top: 10px; font-size: 13px">
+                <p>
+                  <strong>オススメ用途：</strong>
+                  <span style="padding-left: 0">論文検索・壁打ち</span>
+                  <span style="padding-left: 0">コーディング</span>
+                  思考過程の可視化で複雑な問題解決やコーディングに適しています。
+                </p>
+              </div>
+            </div>
+
+            <div class="model-card">
+              <div class="model-card-header">
+                <span class="model-name">Gemini 1.5 Pro/2.0</span>
+                <span class="model-company">Google</span>
+              </div>
+              <p>
+                Deep
+                Research機能で詳細な調査レポートを生成。200万トークンの長いコンテキスト。
+              </p>
+              <div class="model-features">
+                <span class="tag">レポート生成</span>
+                <span class="tag">双方向インタラクション</span>
+                <span class="tag">画像生成</span>
+              </div>
+              <div class="box" style="margin-top: 10px; font-size: 13px">
+                <p>
+                  <strong>オススメ用途：</strong>
+                  <span style="padding-left: 0">情報収集・資料作成</span>
+                  <span style="padding-left: 0">コーディング</span>
+                  詳細な調査レポートを5〜10分で作成。社内ルール策定に最適。
+                </p>
+              </div>
+            </div>
+
+            <div class="model-card">
+              <div class="model-card-header">
+                <span class="model-name">Grok3</span>
+                <span class="model-company">xAI</span>
+              </div>
+              <p>
+                DeepSearch機能でウェブ情報を統合。Big Brain
+                Modeで複雑な計算が可能。
+              </p>
+              <div class="model-features">
+                <span class="tag">技術的推論</span>
+                <span class="tag">リアルタイムデータ</span>
+                <span class="tag">自己修正機能</span>
+              </div>
+              <div class="box" style="margin-top: 10px; font-size: 13px">
+                <p>
+                  <strong>オススメ用途：</strong>
+                  <span style="padding-left: 0">情報収集・資料作成</span>
+                  DeepSearchで最新のウェブ情報を収集し、包括的な調査レポートを作成。
+                </p>
+              </div>
             </div>
           </div>
+        </div>
 
+        <!-- 中央カラム -->
+        <div class="column">
+          <div class="card hand-drawn">
+            <h2 class="section-title">サブスクリプション費用</h2>
+
+            <div class="model-title">
+              <span class="model-icon">O</span> OpenAI
+            </div>
+            <table class="comparison-table">
+              <tr>
+                <th>モデル</th>
+                <th>月額 (USD)</th>
+              </tr>
+              <tr>
+                <td>GPT-4.5/o1/GPT-4o/o3-mini</td>
+                <td>Plus: $20, Pro: $200</td>
+              </tr>
+            </table>
+
+            <div class="model-title">
+              <span class="model-icon">A</span> Anthropic
+            </div>
+            <table class="comparison-table">
+              <tr>
+                <th>モデル</th>
+                <th>月額 (USD)</th>
+              </tr>
+              <tr>
+                <td>Claude 3.7 Sonnet</td>
+                <td>Pro: $20</td>
+              </tr>
+            </table>
+
+            <div class="model-title">
+              <span class="model-icon">G</span> Google
+            </div>
+            <table class="comparison-table">
+              <tr>
+                <th>モデル</th>
+                <th>月額（円）</th>
+              </tr>
+              <tr>
+                <td>Gemini Advanced</td>
+                <td>￥2,900</td>
+              </tr>
+            </table>
+
+            <div class="model-title"><span class="model-icon">X</span> xAI</div>
+            <table class="comparison-table">
+              <tr>
+                <th>モデル</th>
+                <th>月額 (USD)</th>
+              </tr>
+              <tr>
+                <td>Grok3</td>
+                <td>X Premium+: $16</td>
+              </tr>
+              <tr>
+                <td>Grok3 SuperGrok</td>
+                <td>未発表</td>
+              </tr>
+            </table>
+          </div>
           <div class="card">
             <h2 class="section-title">生成AIの限界</h2>
 
@@ -490,10 +644,74 @@
               </p>
             </div>
           </div>
+          <div class="card">
+            <h2 class="section-title">生成AIの今後</h2>
+
+            <ul class="feature-list">
+              <li>
+                <span class="highlight">マルチモーダル化</span
+                >：複数の情報形式（テキスト・画像・音声）を統合的に処理
+              </li>
+              <li>
+                <span class="highlight">エージェント化</span
+                >：自律的にタスクを実行可能に
+              </li>
+              <li>
+                <span class="highlight">パーソナライズ化</span
+                >：個々のユーザーに最適化
+              </li>
+              <li>
+                <span class="highlight">倫理的な課題への対応</span
+                >：バイアス、差別、プライバシー侵害などへの対策
+              </li>
+            </ul>
+
+            <div class="bubble">
+              <p>
+                生成AIは<span class="badge">急成長中</span
+                >の技術であり、様々な分野での活用が期待されています。一方で、データ依存性やブラックボックス問題といった限界もあります。
+              </p>
+            </div>
+          </div>
         </div>
 
-        <!-- 中央カラム -->
+        <!-- 右カラム -->
         <div class="column">
+          <div class="card">
+            <h2 class="section-title">コーディングエージェント</h2>
+
+            <div class="model-title">
+              <span class="model-icon">C</span> GitHub Copilot
+            </div>
+            <p>コード補完・生成に特化。既存コードを学習し文脈に合った提案。</p>
+            <p>
+              <small>Fee: Individual $10/月, Business $19/ユーザー/月</small>
+            </p>
+
+            <div class="model-title">
+              <span class="model-icon">C</span> Cursor
+            </div>
+            <p>AIコード生成、エラー検出。自然言語による編集が可能。</p>
+            <p><small>Fee: Free(制限あり), Pro $20/月</small></p>
+
+            <div class="model-title">
+              <span class="model-icon">R</span> Roo Code (旧Cline)
+            </div>
+            <p>
+              VS
+              Code用の自律型コーディングエージェント。ファイル編集やコマンド実行が可能。
+            </p>
+            <p><small>Fee: モデル費用のみ</small></p>
+
+            <div class="model-title">
+              <span class="model-icon">D</span> Devin
+            </div>
+            <p>
+              完全自動のソフトウェアエンジニア。計画・テスト・デプロイまで対応。
+            </p>
+            <p><small>Fee: Early Access(待機リスト制)</small></p>
+          </div>
+
           <div class="card">
             <h2 class="section-title">AIエージェント</h2>
 
@@ -568,135 +786,6 @@
                 偏見と公平性、プライバシー、誤情報、著作権などの問題があります。開発者は倫理的ガイドラインを遵守し、責任ある開発を行う必要があります。
               </p>
             </div>
-          </div>
-          <div class="card">
-            <h2 class="section-title">生成AIの今後</h2>
-
-            <ul class="feature-list">
-              <li>
-                <span class="highlight">マルチモーダル化</span
-                >：複数の情報形式（テキスト・画像・音声）を統合的に処理
-              </li>
-              <li>
-                <span class="highlight">エージェント化</span
-                >：自律的にタスクを実行可能に
-              </li>
-              <li>
-                <span class="highlight">パーソナライズ化</span
-                >：個々のユーザーに最適化
-              </li>
-              <li>
-                <span class="highlight">倫理的な課題への対応</span
-                >：バイアス、差別、プライバシー侵害などへの対策
-              </li>
-            </ul>
-
-            <div class="bubble">
-              <p>
-                生成AIは<span class="badge">急成長中</span
-                >の技術であり、様々な分野での活用が期待されています。一方で、データ依存性やブラックボックス問題といった限界もあります。
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- 右カラム -->
-        <div class="column">
-          <div class="card">
-            <h2 class="section-title">コーディングエージェント</h2>
-
-            <div class="model-title">
-              <span class="model-icon">C</span> GitHub Copilot
-            </div>
-            <p>コード補完・生成に特化。既存コードを学習し文脈に合った提案。</p>
-            <p>
-              <small>Fee: Individual $10/月, Business $19/ユーザー/月</small>
-            </p>
-
-            <div class="model-title">
-              <span class="model-icon">C</span> Cursor
-            </div>
-            <p>AIコード生成、エラー検出。自然言語による編集が可能。</p>
-            <p><small>Fee: Free(制限あり), Pro $20/月</small></p>
-
-            <div class="model-title">
-              <span class="model-icon">R</span> Roo Code (旧Cline)
-            </div>
-            <p>
-              VS
-              Code用の自律型コーディングエージェント。ファイル編集やコマンド実行が可能。
-            </p>
-            <p><small>Fee: モデル費用のみ</small></p>
-
-            <div class="model-title">
-              <span class="model-icon">D</span> Devin
-            </div>
-            <p>
-              完全自動のソフトウェアエンジニア。計画・テスト・デプロイまで対応。
-            </p>
-            <p><small>Fee: Early Access(待機リスト制)</small></p>
-          </div>
-
-          <div class="card hand-drawn">
-            <h2 class="section-title">サブスクリプション費用</h2>
-
-            <div class="model-title">
-              <span class="model-icon">O</span> OpenAI
-            </div>
-            <table class="comparison-table">
-              <tr>
-                <th>モデル</th>
-                <th>月額 (USD)</th>
-              </tr>
-              <tr>
-                <td>GPT-4.5/o1/GPT-4o/o3-mini</td>
-                <td>Plus: $20, Pro: $200</td>
-              </tr>
-            </table>
-
-            <div class="model-title">
-              <span class="model-icon">A</span> Anthropic
-            </div>
-            <table class="comparison-table">
-              <tr>
-                <th>モデル</th>
-                <th>月額 (USD)</th>
-              </tr>
-              <tr>
-                <td>Claude 3.7 Sonnet</td>
-                <td>Pro: $20</td>
-              </tr>
-            </table>
-
-            <div class="model-title">
-              <span class="model-icon">G</span> Google
-            </div>
-            <table class="comparison-table">
-              <tr>
-                <th>モデル</th>
-                <th>月額（円）</th>
-              </tr>
-              <tr>
-                <td>Gemini Advanced</td>
-                <td>￥2,900</td>
-              </tr>
-            </table>
-
-            <div class="model-title"><span class="model-icon">X</span> xAI</div>
-            <table class="comparison-table">
-              <tr>
-                <th>モデル</th>
-                <th>月額 (USD)</th>
-              </tr>
-              <tr>
-                <td>Grok3</td>
-                <td>X Premium+: $16</td>
-              </tr>
-              <tr>
-                <td>Grok3 SuperGrok</td>
-                <td>未発表</td>
-              </tr>
-            </table>
           </div>
         </div>
       </div>
